@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; }
+.game-container {
+    width: 100vw;
+    height: 300px;
+    background-color: lightblue;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid green;
+}
+.player {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+}
+.obstacle {
+    width: 30px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    right: -30px;
+}
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    background: white;
+    padding: 10px;
+    display: none;
+}
